@@ -1,0 +1,13 @@
+@import 'colors';
+@import 'components/side-nav/side-nav.scss';
+@import 'components/main/main.scss';
+
+body {
+  margin: 0;
+}
+
+.App {
+  background-color: $yellow-light;
+  height: 100%;
+  display: flex;
+}

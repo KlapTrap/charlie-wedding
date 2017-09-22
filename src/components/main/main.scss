@@ -1,0 +1,84 @@
+@import '../../colors';
+.main {
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+.section {
+    flex: 1;
+    display: flex;
+}
+.left-section {
+    flex: 1;
+    margin-left: 150px;
+    &.no-margin {
+        margin-left: 0;
+    }
+}
+.right-section {
+    flex: 1;
+    margin-right: 120px;
+}
+.into-text {
+    margin-top: 120px;
+    color: $dark-yellow;
+}
+.big-number {
+    font-size: 520px;
+    margin-top: 150px;
+}
+.center-text {
+    text-align: center;
+}
+
+.off-center-text {
+    text-align: end;
+}
+
+.big-time-text {
+    color: $mid-yellow;
+    font-size: 200px;
+    &-sub {
+        margin-top: -30px;
+        margin-left: 15px;
+        width: 500px;
+        &-left {
+            margin-left: -150px;
+        }
+    }
+    &-sub-header {
+        margin-bottom: 6px;
+        color: $header-yellow;
+        font-style: italic;
+    }
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    justify-content: left;
+    align-items: center;
+    color: $dark-yellow;
+    &::before {
+        content: '';
+        height: 1px;
+        width: 52px;
+        background-color: $yellow;
+        margin-right: 10px;
+    }
+}
+.paragraph {
+    color: $dark-yellow;
+}
+
+.hidden {
+    color: transparent;
+}
+
+.accommodation-section {
+    &-header {
+        margin-top: 100px;
+    }
+    &-row {
+
+    }
+}
