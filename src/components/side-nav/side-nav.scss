@@ -3,9 +3,16 @@
     width: 50px;
     padding: 10px;
     height: 100%;
-    &--items {
-        transform: rotate(-90deg);
+    position: absolute;
+    &__items {
+        transform: rotate(-90deg) translateX(-100%);
         transform-origin: left top 0;
-        float: left;
+        position: absolute;
+        left: 50%;
+        margin-left: -10px;
+        line-height: 20px;
+    }
+    &__item {
+        padding: 0 10px;
     }
 }

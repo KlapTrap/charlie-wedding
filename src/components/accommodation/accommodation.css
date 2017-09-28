@@ -1,0 +1,13 @@
+.accommodation {
+  position: relative;
+  margin: 50px 5% 0;
+  padding-bottom: 60px;
+  flex: 1; }
+  .accommodation-row {
+    max-width: 800px;
+    display: flex;
+    margin: auto; }
+  .accommodation-button {
+    position: absolute;
+    bottom: 0;
+    margin-top: 20px; }

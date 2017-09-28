@@ -1,6 +1,8 @@
 .main {
-  margin-bottom: 150px;
-  margin-top: 50px; }
+  padding-bottom: 150px;
+  padding-top: 50px;
+  margin-left: 50px;
+  background-color: #FCFBF0; }
 
 .section {
   flex: 1;
@@ -49,7 +51,8 @@
   justify-content: center;
   justify-content: left;
   align-items: center;
-  color: #82670D; }
+  color: #82670D;
+  font-size: 18px; }
   .section-header::before {
     content: '';
     height: 1px;

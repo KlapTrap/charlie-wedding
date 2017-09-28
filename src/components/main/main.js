@@ -3,6 +3,8 @@ import './main.scss';
 import { Component } from 'react';
 import React from 'react';
 
+import Accommodation from '../accommodation/accommodation';
+import AccommodationRow from '../accommodation/accommodation-row';
 import BigTime from '../big-time/big-time';
 
 class Main extends Component {
@@ -64,12 +66,22 @@ class Main extends Component {
                 <div className="section-header accommodation-section-header">
                     Accommodation
                 </div>
-                <div className="accommodation-section">
-                    <div className="accommodation-section-row">
-
-                    </div>
-
-                </div>
+                <AccommodationRow>
+                    <Accommodation
+                        title="The Cart Shed"
+                        body="Luxurious but quirky self-catering detached accommodation in the heart of the picturesque village of Turville" />
+                    <Accommodation
+                        title="The Frog"
+                        body="The Frog has en-suite facilities, a television and window views of the valley. Included in the room rate is the fantastic Frog breakfast." />
+                </AccommodationRow>
+                <AccommodationRow>
+                    <Accommodation
+                        title="The Old Bakery"
+                        body="The Old Bakery is a beautifully converted Grade II listed property in the perfect holiday location of the historic market town of Wendover" />
+                    <Accommodation
+                        title="The Stag and Huntsman"
+                        body="Set amidst the Chiltern Hills, between Henley on Thames and Marlow, The Stag and Huntsman is the perfect countryside retreat in Hambleden village." />
+                </AccommodationRow>
             </div>
         );
     }

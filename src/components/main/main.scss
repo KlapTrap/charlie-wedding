@@ -1,7 +1,9 @@
 @import '../../colors';
 .main {
-    margin-bottom: 150px;
-    margin-top: 50px;
+    padding-bottom: 150px;
+    padding-top: 50px;
+    margin-left: 50px;
+    background-color: $yellow-light;
 }
 .section {
     flex: 1;
@@ -58,6 +60,7 @@
     justify-content: left;
     align-items: center;
     color: $dark-yellow;
+    font-size: 18px;
     &::before {
         content: '';
         height: 1px;

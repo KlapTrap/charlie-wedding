@@ -15,10 +15,10 @@ class BigTime extends Component {
                         {this.props.time}
                     </div>
                     <div className="big-time__body">
-                        <div className="big-time__title">
+                        <div className="App__title">
                             {this.props.title}
                         </div>
-                        <div className="big-time__text">
+                        <div className="App__text">
                             {this.props.text}
                         </div>
                     </div>
