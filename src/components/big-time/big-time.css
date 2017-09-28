@@ -1,0 +1,30 @@
+.big-time__time {
+  color: #FFDC66;
+  font-size: 200px; }
+
+.big-time__title {
+  margin-bottom: 6px;
+  color: #E0B116;
+  font-style: italic; }
+
+.big-time__text {
+  color: #82670D; }
+
+.big-time__inner {
+  position: relative; }
+
+@media screen and (min-width: 900px) {
+  .big-time__body {
+    margin-top: -30px;
+    position: absolute;
+    width: 350px;
+    right: -200px; } }
+
+.big-time__wrapper {
+  display: flex;
+  margin-top: 60px; }
+  @media screen and (min-width: 900px) {
+    .big-time__wrapper {
+      justify-content: center; } }
+  .big-time__wrapper--off-center {
+    margin-right: 300px; }

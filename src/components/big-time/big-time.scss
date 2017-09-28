@@ -1,0 +1,35 @@
+.big-time {
+    &__time {
+        color: #FFDC66;
+        font-size: 200px;
+    }
+    &__title {
+        margin-bottom: 6px;
+        color: #E0B116;
+        font-style: italic;
+    }
+    &__text {
+        color: #82670D;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__body {
+        @media screen and (min-width: 900px) {
+            margin-top: -30px;
+            position: absolute;
+            width: 350px;
+            right: -200px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 60px;
+        @media screen and (min-width: 900px) {
+            justify-content: center;
+        }
+        &--off-center {
+            margin-right: 300px;
+        }
+    }
+}

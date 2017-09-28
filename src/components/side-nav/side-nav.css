@@ -1,0 +1,9 @@
+.side-nav {
+  background-color: #ffffff;
+  width: 50px;
+  padding: 10px;
+  height: 100%; }
+  .side-nav--items {
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    float: left; }

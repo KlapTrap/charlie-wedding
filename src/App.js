@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-import SideNav from './components/side-nav/side-nav';
+import { Component } from 'react';
+import React from 'react';
+
 import Main from './components/main/main';
+import SideNav from './components/side-nav/side-nav';
+
 
 class App extends Component {
   render() {
