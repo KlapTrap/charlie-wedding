@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 .side-nav {
   background-color: #ffffff;
   width: 50px;
@@ -114,13 +115,18 @@
   padding-bottom: 60px;
   flex: 1; }
   .accommodation-row {
-    max-width: 800px;
     display: flex;
-    margin: auto; }
+    flex: 1;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column; }
+    .accommodation-row.right {
+      margin-top: 200px; }
   .accommodation-button {
-    position: absolute;
-    bottom: 0;
     margin-top: 20px; }
+  .accommodation__wrapper {
+    margin: 5%;
+    display: flex; }
 
 .button-wrapper button {
   background: #FFFFFF;
@@ -141,3 +147,6 @@ body {
 .App__text {
   color: #82670D;
   font-size: 16px; }
+
+* {
+  font-family: 'Playfair Display', serif !important; }

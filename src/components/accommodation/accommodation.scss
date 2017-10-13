@@ -1,16 +1,23 @@
 .accommodation {
-    &-row {
-        max-width: 800px;
-        display: flex;
-        margin: auto;
-    }
-    position: relative;
-    margin: 50px 5% 0;
-    padding-bottom: 60px;
-    flex: 1;
-    &-button {
-        position: absolute;
-        bottom: 0;
-        margin-top: 20px;
-    }
+	&-row {
+		display: flex;
+		flex: 1;
+		padding-top: 50px;
+		display: flex;
+		flex-direction: column;
+		&.right {
+			margin-top: 200px;
+		}
+	}
+	position: relative;
+	margin: 50px 5% 0;
+	padding-bottom: 60px;
+	flex: 1;
+	&-button {
+		margin-top: 20px;
+	}
+	&__wrapper {
+		margin: 5%;
+		display: flex;
+	}
 }

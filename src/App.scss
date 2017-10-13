@@ -1,23 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import 'colors';
 @import 'components/side-nav/side-nav.scss';
 @import 'components/main/main.scss';
 @import 'components/big-time/big-time.scss';
 @import 'components/accommodation/accommodation.scss';
 @import 'components/button/button.scss';
-
 body {
-  margin: 0;
+	margin: 0;
 }
 
 .App {
-  &__title {
-    margin-bottom: 6px;
-    color: #E0B116;
-    font-style: italic;
-    font-size: 18px;
-  }
-  &__text {
-      color: #82670D;
-      font-size: 16px;
-  }
+	&__title {
+		margin-bottom: 6px;
+		color: #E0B116;
+		font-style: italic;
+		font-size: 18px;
+	}
+	&__text {
+		color: #82670D;
+		font-size: 16px;
+	}
+}
+
+* {
+	font-family: 'Playfair Display', serif !important;
 }
