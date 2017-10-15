@@ -18,7 +18,7 @@ class InputComponent extends Component {
     render() {
         return (
             <div className="wedding-input__wrapper">
-                <input className="wedding-input" placeholder={this.props.placeholder} type="text" value={this.state.value} onChange={this.handleChange} />
+                <input name={this.props.name} className="wedding-input" placeholder={this.props.placeholder} type="text" value={this.state.value} onChange={this.handleChange} />
             </div>
         );
     }

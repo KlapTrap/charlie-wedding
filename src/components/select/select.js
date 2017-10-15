@@ -15,20 +15,24 @@ const styles = theme => ({
 
 class SelectComponent extends Component {
 
-    state = {
-        value: ''
+    constructor(props) {
+        super(props);
+        this.state = { value: props.value || '' };
+    }
+
+    handleChange = event => {
+        this.setState({ value: event.target.value });
     };
+
     render() {
         return (
             <FormControl className="wedding-select__wrapper">
                 <InputLabel htmlFor="age-simple">{this.props.placeholder}</InputLabel>
                 <Select
+                    name={this.props.name}
                     className="wedding-select"
                     value={this.state.value}
                     onChange={this.handleChange}
-                    classes={{
-                        root: { borderColor: '#F3C019' }
-                    }}
                 >
                     {this.props.children}
                 </Select>
