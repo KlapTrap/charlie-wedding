@@ -6,6 +6,8 @@ import React from 'react';
 import Accommodation from '../accommodation/accommodation';
 import AccommodationRow from '../accommodation/accommodation-row';
 import BigTime from '../big-time/big-time';
+import InputComponent from '../input/input';
+import SelectComponent from '../select/select';
 
 class Main extends Component {
 	render() {
@@ -20,7 +22,9 @@ class Main extends Component {
 					<div className="right-section">
 						<div className="into-text">
 							We’re getting married and we would love for you to join us. Take a look at the day’s schedule below, find accommodation nearby or RSVP straight away just below.
-                        </div>
+						</div>
+						<InputComponent placeholder="Test" />
+						<SelectComponent placeholder="Test1" />
 					</div>
 				</div>
 				<BigTime

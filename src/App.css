@@ -135,6 +135,23 @@
   color: #82670D;
   font-size: 16px; }
 
+.wedding-input {
+  border: none;
+  width: 100%;
+  font-size: 14px; }
+  .wedding-input__wrapper {
+    padding: 8px 5px;
+    border-bottom: 1px solid #F3C019;
+    background-color: white;
+    margin-top: 10px; }
+
+.wedding-select {
+  width: 100%;
+  background-color: white;
+  margin-top: 10px; }
+  .wedding-select:before, .wedding-select:after {
+    background-color: #F3C019 !important; }
+
 body {
   margin: 0; }
 

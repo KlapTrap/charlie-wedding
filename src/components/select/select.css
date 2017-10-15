@@ -1,0 +1,6 @@
+.wedding-select {
+  width: 100%;
+  background-color: white;
+  margin-top: 10px; }
+  .wedding-select:before, .wedding-select:after {
+    background-color: #F3C019 !important; }
