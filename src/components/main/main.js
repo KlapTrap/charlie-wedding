@@ -1,5 +1,6 @@
 import './main.scss';
 
+import { MenuItem } from 'material-ui/Menu';
 import { Component } from 'react';
 import React from 'react';
 
@@ -24,7 +25,9 @@ class Main extends Component {
 							We’re getting married and we would love for you to join us. Take a look at the day’s schedule below, find accommodation nearby or RSVP straight away just below.
 						</div>
 						<InputComponent placeholder="Test" />
-						<SelectComponent placeholder="Test1" />
+						<SelectComponent placeholder="Test1">
+							<MenuItem value={10}>Ten</MenuItem>
+						</SelectComponent>
 					</div>
 				</div>
 				<BigTime

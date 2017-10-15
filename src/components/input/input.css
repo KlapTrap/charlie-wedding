@@ -1,7 +1,8 @@
 .wedding-input {
   border: none;
   width: 100%;
-  font-size: 14px; }
+  font-size: 14px;
+  outline: none; }
   .wedding-input__wrapper {
     padding: 8px 5px;
     border-bottom: 1px solid #F3C019;
