@@ -128,12 +128,16 @@
     margin: 5%;
     display: flex; }
 
-.button-wrapper button {
-  background: #FFFFFF;
-  border: 1px solid #F3C019;
-  padding: 5px 10px;
-  color: #82670D;
-  font-size: 16px; }
+.button-wrapper {
+  position: relative; }
+  .button-wrapper button {
+    background: #FFFFFF;
+    border: 1px solid #F3C019;
+    padding: 5px 10px;
+    color: #82670D;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer; }
 
 .wedding-input {
   border: none;
@@ -171,6 +175,16 @@
     .wedding-select__wrapper svg {
       top: 10px;
       right: 8px; }
+
+.form-filler {
+  width: 100%; }
+
+.form-button {
+  position: absolute;
+  right: 0; }
+
+.wedding-form {
+  margin-top: 20px; }
 
 body {
   margin: 0; }

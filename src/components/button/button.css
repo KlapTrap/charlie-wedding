@@ -1,6 +1,10 @@
-.button-wrapper button {
-  background: #FFFFFF;
-  border: 1px solid #F3C019;
-  padding: 5px 10px;
-  color: #82670D;
-  font-size: 16px; }
+.button-wrapper {
+  position: relative; }
+  .button-wrapper button {
+    background: #FFFFFF;
+    border: 1px solid #F3C019;
+    padding: 5px 10px;
+    color: #82670D;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer; }
