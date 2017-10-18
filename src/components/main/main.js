@@ -3,6 +3,9 @@ import './main.scss';
 import { Component } from 'react';
 import React from 'react';
 
+import image1 from '../../images/schedule_1.jpg';
+import image2 from '../../images/schedule_2.jpg';
+import image3 from '../../images/schedule_3.jpg';
 import Accommodation from '../accommodation/accommodation';
 import AccommodationRow from '../accommodation/accommodation-row';
 import BigTime from '../big-time/big-time';
@@ -26,37 +29,40 @@ class Main extends Component {
 					</div>
 				</div>
 				<BigTime
+					image={image1}
 					time="1.30"
 					title="Meet at Old Luxters Barn"
 					text="Meet with us and there other guests at the charming Old Luxters Barn set in the Buckinghamshire countryside."
+					left="true"
 				/>
 				<BigTime
 					time="2.00"
 					title="Ceremony"
 					text="Witness us get married."
-					offCenter="true"
 				/>
 				<BigTime
+					image={image2}
 					time="3.00"
 					title="Drinks reception"
 					text="There will be some speeches from friends and family and then a toast to the bride and groom."
+					right="true"
 				/>
 				<BigTime
 					time="4.00"
 					title="Wedding breakfast"
 					text="There will be some speeches from friends and family and then a toast to the bride and groom."
-					offCenter="true"
 				/>
 				<BigTime
+					image={image3}
 					time="7.00"
 					title="Cake cutting"
 					text="Food and drink is served! There is a paid bar but each guest will be amply provided for with alcohol."
+					left="true"
 				/>
 				<BigTime
 					time="8.00"
 					title="Party"
 					text="Food and drink is served! There is a paid bar but each guest will be amply provided for with alcohol."
-					offCenter="true"
 				/>
 				<div className="accommodation__wrapper">
 					<AccommodationRow>
