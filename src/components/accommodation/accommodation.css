@@ -11,8 +11,20 @@
     flex-direction: column; }
     .accommodation-row.right {
       margin-top: 200px; }
+      @media screen and (max-width: 900px) {
+        .accommodation-row.right {
+          margin: 0; } }
+  @media screen and (max-width: 900px) {
+    .accommodation {
+      margin: 0;
+      padding-bottom: 20px; } }
   .accommodation-button {
     margin-top: 20px; }
   .accommodation__wrapper {
     margin: 5%;
     display: flex; }
+    @media screen and (max-width: 900px) {
+      .accommodation__wrapper {
+        flex-direction: column;
+        margin: 0;
+        margin-right: 20px; } }

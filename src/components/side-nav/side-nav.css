@@ -1,9 +1,12 @@
 .side-nav {
-  background-color: #ffffff;
-  width: 50px;
-  padding: 10px;
+  background-color: transparent;
+  width: 100px;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+  padding-top: 50px;
+  font-size: 14px; }
+  .side-nav__inner {
+    padding: 10px; }
   .side-nav__items {
     transform: rotate(-90deg) translateX(-100%);
     transform-origin: left top 0;

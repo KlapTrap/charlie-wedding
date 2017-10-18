@@ -1,9 +1,16 @@
 .big-time__time {
   color: #FFDC66;
   font-size: 200px; }
+  @media screen and (max-width: 900px) {
+    .big-time__time {
+      font-size: 100px; } }
 
 .big-time__inner {
   position: relative; }
+
+@media screen and (max-width: 900px) {
+  .big-time__body {
+    margin-right: 20px; } }
 
 @media screen and (min-width: 900px) {
   .big-time__body {
@@ -20,3 +27,6 @@
       justify-content: center; } }
   .big-time__wrapper--off-center {
     margin-right: 300px; }
+    @media screen and (max-width: 900px) {
+      .big-time__wrapper--off-center {
+        margin-right: 0; } }

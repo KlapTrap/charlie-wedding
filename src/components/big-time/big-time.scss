@@ -2,11 +2,17 @@
     &__time {
         color: #FFDC66;
         font-size: 200px;
+        @media screen and (max-width: 900px) {
+            font-size: 100px;
+        }
     }
     &__inner {
         position: relative;
     }
     &__body {
+        @media screen and (max-width: 900px) {
+            margin-right: 20px;
+        }
         @media screen and (min-width: 900px) {
             margin-top: -30px;
             position: absolute;
@@ -22,6 +28,9 @@
         }
         &--off-center {
             margin-right: 300px;
+            @media screen and (max-width: 900px) {
+                margin-right: 0;
+            }
         }
     }
 }

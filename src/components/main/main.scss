@@ -4,10 +4,16 @@
     padding-top: 50px;
     margin-left: 50px;
     background-color: $yellow-light;
+    overflow: auto;
+    height:100vh;
+    margin-left: 100px;
 }
 .section {
     flex: 1;
     display: flex;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }
 }
 .left-section {
     flex: 1;
@@ -19,6 +25,9 @@
 .right-section {
     flex: 1;
     margin-right: 120px;
+    @media screen and (max-width: 900px) {
+        margin-right: 20px;
+    }
 }
 .into-text {
     margin-top: 120px;

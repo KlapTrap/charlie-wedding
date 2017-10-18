@@ -7,17 +7,29 @@
 		flex-direction: column;
 		&.right {
 			margin-top: 200px;
+			@media screen and (max-width: 900px) {
+				margin: 0;
+			}
 		}
 	}
 	position: relative;
 	margin: 50px 5% 0;
 	padding-bottom: 60px;
 	flex: 1;
+	@media screen and (max-width: 900px) {
+		margin: 0;
+		padding-bottom: 20px;
+	}
 	&-button {
 		margin-top: 20px;
 	}
 	&__wrapper {
 		margin: 5%;
 		display: flex;
+		@media screen and (max-width: 900px) {
+			flex-direction: column;
+			margin: 0;
+			margin-right: 20px;
+		}
 	}
 }

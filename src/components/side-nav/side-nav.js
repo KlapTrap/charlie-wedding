@@ -7,16 +7,18 @@ class SideNav extends Component {
   render() {
     return (
       <div className="side-nav">
-        <div className="side-nav__items">
-          <span className="side-nav__item">
-            Schedule
+        <div className="side-nav__inner">
+          <div className="side-nav__items">
+            <span className="side-nav__item">
+              Schedule
           </span>
-          <span className="side-nav__item">
-            Accommodation
+            <span className="side-nav__item">
+              Accommodation
           </span>
-          <span className="side-nav__item">
-            RSVP
+            <span className="side-nav__item">
+              RSVP
           </span>
+          </div>
         </div>
       </div>
     );
