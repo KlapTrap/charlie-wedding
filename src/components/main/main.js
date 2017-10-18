@@ -1,11 +1,13 @@
 import './main.scss';
 
-import { Component } from 'react';
 import React from 'react';
+import { Component } from 'react';
 
+import hero from '../../images/hero_1.jpg';
 import image1 from '../../images/schedule_1.jpg';
 import image2 from '../../images/schedule_2.jpg';
 import image3 from '../../images/schedule_3.jpg';
+import footerImage from '../../images/schedule_4.jpg';
 import Accommodation from '../accommodation/accommodation';
 import AccommodationRow from '../accommodation/accommodation-row';
 import BigTime from '../big-time/big-time';
@@ -19,12 +21,13 @@ class Main extends Component {
 					<div className="left-section no-margin">
 						<div className="section-header">
 							16-02-2018
-                        </div>
+						</div>
 					</div>
 					<div className="right-section">
 						<div className="into-text">
 							We’re getting married and we would love for you to join us. Take a look at the day’s schedule below, find accommodation nearby or RSVP straight away just below.
 						</div>
+						<img className="big-time__image form-image" src={hero} />
 						<FormComponent />
 					</div>
 				</div>
@@ -81,6 +84,18 @@ class Main extends Component {
 							title="The Stag and Huntsman"
 							body="Set amidst the Chiltern Hills, between Henley on Thames and Marlow, The Stag and Huntsman is the perfect countryside retreat in Hambleden village." />
 					</AccommodationRow>
+				</div>
+				<div className="section section-last">
+					<div className="left-section no-margin">
+
+					</div>
+					<div className="right-section">
+						<div className="into-text">
+							We’re getting married and we would love for you to join us. Take a look at the day’s schedule below, find accommodation nearby or RSVP straight away just below.
+					</div>
+						<img className="big-time__image form-image" src={footerImage} />
+						<FormComponent />
+					</div>
 				</div>
 			</div>
 		);

@@ -2,9 +2,11 @@
 	&-row {
 		display: flex;
 		flex: 1;
-		padding-top: 50px;
 		display: flex;
 		flex-direction: column;
+		@media screen and (min-width: 900px) {
+			padding-top: 50px;
+		}
 		&.right {
 			margin-top: 200px;
 			@media screen and (max-width: 900px) {
@@ -19,6 +21,7 @@
 	@media screen and (max-width: 900px) {
 		margin: 0;
 		padding-bottom: 20px;
+		padding-top: 30px;
 	}
 	&-button {
 		margin-top: 20px;
@@ -30,6 +33,7 @@
 			flex-direction: column;
 			margin: 0;
 			margin-right: 20px;
+			margin-top: 80px;
 		}
 	}
 }

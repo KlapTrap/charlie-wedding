@@ -2,6 +2,9 @@
   padding-left: 100px;
   padding-top: 100px;
   margin-bottom: -100px; }
+  @media screen and (max-width: 900px) {
+    .big-time__image {
+      display: none; } }
 
 .big-time__time {
   color: #FFDC66;

@@ -19,6 +19,7 @@
     padding: 0 10px; }
 
 .main {
+  position: relative;
   padding-bottom: 150px;
   padding-top: 50px;
   margin-left: 50px;
@@ -33,6 +34,8 @@
   @media screen and (max-width: 900px) {
     .section {
       flex-direction: column; } }
+  .section-last {
+    margin-bottom: 200px; }
 
 .left-section {
   flex: 1;
@@ -41,15 +44,22 @@
     margin-left: 0; }
 
 .right-section {
+  position: relative;
   flex: 1;
-  margin-right: 120px; }
+  margin-right: 120px;
+  z-index: 1; }
   @media screen and (max-width: 900px) {
     .right-section {
       margin-right: 20px; } }
 
 .into-text {
   margin-top: 120px;
+  margin-bottom: 120px;
   color: #82670D; }
+  @media screen and (max-width: 900px) {
+    .into-text {
+      margin-top: 50px;
+      margin-bottom: 20px; } }
 
 .big-number {
   font-size: 520px;
@@ -102,6 +112,9 @@
   padding-left: 100px;
   padding-top: 100px;
   margin-bottom: -100px; }
+  @media screen and (max-width: 900px) {
+    .big-time__image {
+      display: none; } }
 
 .big-time__time {
   color: #FFDC66;
@@ -167,9 +180,11 @@
   .accommodation-row {
     display: flex;
     flex: 1;
-    padding-top: 50px;
     display: flex;
     flex-direction: column; }
+    @media screen and (min-width: 900px) {
+      .accommodation-row {
+        padding-top: 50px; } }
     .accommodation-row.right {
       margin-top: 200px; }
       @media screen and (max-width: 900px) {
@@ -178,7 +193,8 @@
   @media screen and (max-width: 900px) {
     .accommodation {
       margin: 0;
-      padding-bottom: 20px; } }
+      padding-bottom: 20px;
+      padding-top: 30px; } }
   .accommodation-button {
     margin-top: 20px; }
   .accommodation__wrapper {
@@ -188,7 +204,8 @@
       .accommodation__wrapper {
         flex-direction: column;
         margin: 0;
-        margin-right: 20px; } }
+        margin-right: 20px;
+        margin-top: 80px; } }
 
 .button-wrapper {
   position: relative; }
@@ -247,6 +264,14 @@
 
 .wedding-form {
   margin-top: 20px; }
+
+.form-image {
+  position: absolute;
+  left: -420px;
+  top: 0;
+  width: 442px;
+  height: 442px;
+  z-index: -1; }
 
 body {
   margin: 0;

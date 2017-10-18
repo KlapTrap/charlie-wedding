@@ -1,5 +1,6 @@
 @import '../../colors';
 .main {
+    position: relative;
     padding-bottom: 150px;
     padding-top: 50px;
     margin-left: 50px;
@@ -14,6 +15,9 @@
     @media screen and (max-width: 900px) {
         flex-direction: column;
     }
+    &-last {
+        margin-bottom: 200px;
+    }
 }
 .left-section {
     flex: 1;
@@ -23,14 +27,21 @@
     }
 }
 .right-section {
+    position: relative;
     flex: 1;
     margin-right: 120px;
+    z-index: 1;
     @media screen and (max-width: 900px) {
         margin-right: 20px;
     }
 }
 .into-text {
     margin-top: 120px;
+    margin-bottom: 120px;
+    @media screen and (max-width: 900px) {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
     color: $dark-yellow;
 }
 .big-number {

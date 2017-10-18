@@ -3,6 +3,9 @@
         padding-left: 100px;
         padding-top: 100px;
         margin-bottom: -100px;
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
     }
     &__time {
         color: #FFDC66;

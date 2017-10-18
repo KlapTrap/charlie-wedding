@@ -7,3 +7,11 @@
 
 .wedding-form {
   margin-top: 20px; }
+
+.form-image {
+  position: absolute;
+  left: -420px;
+  top: 0;
+  width: 442px;
+  height: 442px;
+  z-index: -1; }
