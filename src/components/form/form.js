@@ -11,16 +11,48 @@ import SelectComponent from '../select/select';
 
 class FormComponent extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            error: false,
+            sending: false,
+            done: false
+        };
+    }
+
     guid = this.guidGenerator();
 
-    url = 'https://script.google.com/macros/u/0/s/AKfycby13l58T8e1IdL4UaWOYiRrTpbLNa0vM-e26V6txJcLBytIefg/exec';
+    url = 'https://script.google.com/macros/s/AKfycby13l58T8e1IdL4UaWOYiRrTpbLNa0vM-e26V6txJcLBytIefg/exec';
 
     $form;
 
     submit = e => {
+        const that = this;
+        this.setState((prevState, props) => {
+            return { sending: true, error: false };
+        });
         $.post(this.url, this.$form.serialize(), function (data) {
-            console.log("Success! Data: " + data.statusText);
-        })
+            that.setState((prevState, props) => {
+                return { sending: false };
+            });
+            if (data.error) {
+                that.setState((prevState, props) => {
+                    return { error: false };
+                });
+                return;
+            }
+            const $formsOuter = $('.wedding-form-outer');
+            const $forms = $('.wedding-form');
+            $formsOuter.height($formsOuter.height());
+
+            // $forms.fadeOut(() => {
+            // $formsOuter.addClass('done');
+            that.setState((prevState, props) => ({
+                done: true
+            }))
+            // });
+
+        });
         e.preventDefault();
     }
 
@@ -36,20 +68,26 @@ class FormComponent extends Component {
     }
 
     render() {
+        const button = this.state.done ? <button disabled="true" className="accommodation-button form-button" type="submit">Sent!</button> :
+            <button disabled={this.state.sending} className="accommodation-button form-button" type="submit">{this.state.sending ? 'sending...' : 'send'}</button>
         return (
-            <form id={this.guid} className="wedding-form" onSubmit={this.submit} autoComplete="off" action="#">
-                <InputComponent name="name" placeholder="Your Name" />
-                <SelectComponent name="guestType" value="day">
-                    <MenuItem value={'day'}>Day Guest</MenuItem>
-                    <MenuItem value={'evening'}>Evening Guest</MenuItem>
-                </SelectComponent>
-                <InputComponent name="diet" placeholder="Your dietary requirements" />
-                <InputComponent name="question" placeholder="Questions" />
-                <ButtonWrapper>
-                    <div className="form-filler"></div>
-                    <button className="accommodation-button form-button" type="submit">send</button>
-                </ButtonWrapper>
-            </form>
+            <div className="wedding-form-outer">
+                <div className="wedding-thanks">Thank you!</div>
+                <form id={this.guid} className="wedding-form" onSubmit={this.submit} autoComplete="off" action="#">
+                    <InputComponent required name="name" placeholder="Your Name" />
+                    <SelectComponent name="guestType" value="day">
+                        <MenuItem value={'day'}>Day Guest</MenuItem>
+                        <MenuItem value={'evening'}>Evening Guest</MenuItem>
+                    </SelectComponent>
+                    <InputComponent name="diet" placeholder="Your dietary requirements" />
+                    <InputComponent name="question" placeholder="Questions" />
+                    <ButtonWrapper>
+                        <div className="form-filler"></div>
+                        {button}
+                    </ButtonWrapper>
+                </form>
+                <div className={'form-error ' + (this.state.error ? 'form-error--show' : '')}>We couldn't send your rsvp, please try again.</div>
+            </div>
         );
     }
 }

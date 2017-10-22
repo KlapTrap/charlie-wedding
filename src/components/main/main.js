@@ -16,8 +16,8 @@ import FormComponent from '../form/form';
 class Main extends Component {
 	render() {
 		return (
-			<div className="main">
-				<div className="section">
+			<div className="main" id="main">
+				<div id="rsvp" className="section">
 					<div className="left-section no-margin">
 						<div className="section-header">
 							16-02-2018
@@ -32,6 +32,7 @@ class Main extends Component {
 					</div>
 				</div>
 				<BigTime
+					id="schedule"
 					image={image1}
 					time="1.30"
 					title="Meet at Old Luxters Barn"
@@ -67,7 +68,7 @@ class Main extends Component {
 					title="Party"
 					text="Food and drink is served! There is a paid bar but each guest will be amply provided for with alcohol."
 				/>
-				<div className="accommodation__wrapper">
+				<div id="accommodation" className="accommodation__wrapper">
 					<AccommodationRow>
 						<Accommodation
 							title="The Cart Shed"

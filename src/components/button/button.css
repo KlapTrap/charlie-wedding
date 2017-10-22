@@ -8,3 +8,7 @@
     font-size: 16px;
     text-transform: uppercase;
     cursor: pointer; }
+    .button-wrapper button:disabled {
+      background: rgba(255, 255, 255, 0.387);
+      color: rgba(130, 103, 13, 0.374);
+      cursor: not-allowed; }

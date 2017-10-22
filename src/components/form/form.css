@@ -15,3 +15,15 @@
   width: 442px;
   height: 442px;
   z-index: -1; }
+
+.wedding-form-outer.done .wedding-thanks {
+  display: block; }
+
+.wedding-thanks {
+  display: none; }
+
+.form-error {
+  color: #b71414;
+  display: none; }
+  .form-error--show {
+    display: block; }

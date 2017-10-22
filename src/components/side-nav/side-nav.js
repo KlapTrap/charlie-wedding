@@ -3,21 +3,31 @@ import './side-nav.scss';
 import { Component } from 'react';
 import React from 'react';
 
+$scrollElm = $('#main')
+
+
+
+scrollTo(id) {
+  $('html, body').animate({
+    scrollTop: $("#elementtoScrollToID").offset().top
+  }, 2000);
+}
+
 class SideNav extends Component {
   render() {
     return (
       <div className="side-nav">
         <div className="side-nav__inner">
           <div className="side-nav__items">
-            <span className="side-nav__item">
+            <a className="side-nav__item">
               Schedule
-          </span>
-            <span className="side-nav__item">
+          </a>
+            <a className="side-nav__item">
               Accommodation
-          </span>
-            <span className="side-nav__item">
+          </a>
+            <a className="side-nav__item">
               RSVP
-          </span>
+          </a>
           </div>
         </div>
       </div>
