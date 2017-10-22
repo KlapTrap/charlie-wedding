@@ -17,7 +17,8 @@ class Main extends Component {
 	render() {
 		return (
 			<div className="main" id="main">
-				<div id="rsvp" className="section">
+				<span id="rsvp"></span>
+				<div className="section">
 					<div className="left-section no-margin">
 						<div className="section-header">
 							16-02-2018
@@ -31,8 +32,8 @@ class Main extends Component {
 						<FormComponent />
 					</div>
 				</div>
+				<span id="schedule"></span>
 				<BigTime
-					id="schedule"
 					image={image1}
 					time="1.30"
 					title="Meet at Old Luxters Barn"
@@ -68,7 +69,8 @@ class Main extends Component {
 					title="Party"
 					text="Food and drink is served! There is a paid bar but each guest will be amply provided for with alcohol."
 				/>
-				<div id="accommodation" className="accommodation__wrapper">
+				<div className="accommodation__wrapper">
+					<span id="accommodation"></span>
 					<AccommodationRow>
 						<Accommodation
 							title="The Cart Shed"
