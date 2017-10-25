@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display+SC");
 .side-nav {
   background-color: transparent;
   width: 100px;
@@ -15,6 +16,8 @@
     left: 50%;
     margin-left: -10px;
     line-height: 20px; }
+    .side-nav__items a {
+      border-bottom: none; }
   .side-nav__item {
     padding: 0 10px;
     cursor: pointer; }
@@ -54,6 +57,9 @@
       margin-right: 20px; } }
 
 .into-text {
+  font-size: 24px;
+  line-height: 38px;
+  color: #82670D;
   margin-top: 120px;
   margin-bottom: 120px;
   color: #82670D; }
@@ -92,7 +98,7 @@
   justify-content: left;
   align-items: center;
   color: #82670D;
-  font-size: 18px; }
+  font-size: 14px; }
   .section-header::before {
     content: '';
     height: 1px;
@@ -177,7 +183,7 @@
   position: relative;
   margin: 50px 5% 0;
   padding-bottom: 60px;
-  flex: 1; }
+  min-height: 150px; }
   .accommodation-row {
     display: flex;
     flex: 1;
@@ -187,7 +193,7 @@
       .accommodation-row {
         padding-top: 50px; } }
     .accommodation-row.right {
-      margin-top: 200px; }
+      margin-top: 150px; }
       @media screen and (max-width: 900px) {
         .accommodation-row.right {
           margin: 0; } }
@@ -216,7 +222,8 @@
     padding: 5px 10px;
     color: #82670D;
     font-size: 16px;
-    text-transform: uppercase;
+    font-family: 'Playfair Display SC', serif;
+    line-height: 24px;
     cursor: pointer; }
     .button-wrapper button:disabled {
       background: rgba(255, 255, 255, 0.387);
@@ -228,7 +235,7 @@
   width: 100%;
   font-size: 14px;
   outline: none;
-  text-transform: uppercase;
+  font-family: 'Playfair Display SC', serif;
   color: #82670D; }
   .wedding-input__wrapper {
     padding: 8px 12px;
@@ -272,8 +279,8 @@
 
 .form-image {
   position: absolute;
-  left: -420px;
-  top: 0;
+  left: -490px;
+  top: 120px;
   width: 442px;
   height: 442px;
   z-index: -1; }
@@ -297,13 +304,33 @@ body {
 
 .App__title {
   margin-bottom: 6px;
-  color: #E0B116;
+  color: #82670D;
   font-style: italic;
-  font-size: 18px; }
+  font-size: 20px; }
+  .App__title a {
+    border-bottom: none; }
 
 .App__text {
   color: #82670D;
-  font-size: 16px; }
+  font-size: 16px;
+  font-family: 'Playfair Display SC', serif; }
+
+a {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #82670D;
+  text-decoration: none;
+  color: inherit;
+  /* visited link */
+  /* mouse over link */
+  /* selected link */ }
+  a:link {
+    color: inherit; }
+  a:visited {
+    color: inherit; }
+  a:hover {
+    color: inherit; }
+  a:active {
+    color: inherit; }
 
 * {
-  font-family: 'Playfair Display', serif !important; }
+  font-family: 'Playfair Display', serif; }

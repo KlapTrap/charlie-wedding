@@ -1,4 +1,4 @@
-import './side-nav.scss';
+import './_side-nav.scss';
 
 import $ from 'jquery';
 import { Component } from 'react';

@@ -36,6 +36,9 @@
     }
 }
 .into-text {
+    font-size: 24px;
+    line-height: 38px;
+    color: #82670D;
     margin-top: 120px;
     margin-bottom: 120px;
     @media screen and (max-width: 900px) {
@@ -79,8 +82,8 @@
     justify-content: center;
     justify-content: left;
     align-items: center;
-    color: $dark-yellow;
-    font-size: 18px;
+    color: #82670D;
+    font-size: 14px;
     &::before {
         content: '';
         height: 1px;

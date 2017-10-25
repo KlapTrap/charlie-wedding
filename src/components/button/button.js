@@ -1,4 +1,4 @@
-import './button.scss';
+import './_button.scss';
 
 import { Component } from 'react';
 import React from 'react';

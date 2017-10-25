@@ -15,6 +15,9 @@
         left: 50%;
         margin-left: -10px;
         line-height: 20px;
+        a {
+            border-bottom: none;
+        }
     }
     &__item {
         padding: 0 10px;

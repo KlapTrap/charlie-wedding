@@ -1,4 +1,4 @@
-import './select.scss';
+import './_select.scss';
 
 import { FormControl } from 'material-ui/Form';
 import { InputLabel } from 'material-ui/Input';

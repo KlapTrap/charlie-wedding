@@ -1,4 +1,4 @@
-import './main.scss';
+import './_main.scss';
 
 import React from 'react';
 import { Component } from 'react';
@@ -36,8 +36,8 @@ class Main extends Component {
 				<BigTime
 					image={image1}
 					time="1.30"
-					title="Meet at Old Luxters Barn"
-					text="Meet with us and there other guests at the charming Old Luxters Barn set in the Buckinghamshire countryside."
+					title='<a target="_blank" href="https://www.google.co.uk/maps/place/Southend,+Henley-on-Thames+RG9+6JW/@51.5952039,-0.9039827,15z/data=!3m1!4b1!4m5!3m4!1s0x48768e82bdf1198d:0x309afc0afc80c157!8m2!3d51.594902!4d-0.8918601;">Meet at Old Luxters Barn</a>'
+					text='Meet with us and there other guests at the charming <a target="_blank" href="http://www.oldluxtersbarn.co.uk">Old Luxters Barn</a> set in the Buckinghamshire countryside.'
 					left="true"
 				/>
 				<BigTime
@@ -94,8 +94,8 @@ class Main extends Component {
 					</div>
 					<div className="right-section">
 						<div className="into-text">
-							We’re getting married and we would love for you to join us. Take a look at the day’s schedule below, find accommodation nearby or RSVP straight away just below.
-					</div>
+							Sound good? Well put your details in the bit below. Can’t wait to see you there!
+						</div>
 						<img className="big-time__image form-image" src={footerImage} />
 						<FormComponent />
 					</div>

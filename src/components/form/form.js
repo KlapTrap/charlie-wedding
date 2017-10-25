@@ -1,4 +1,4 @@
-import './form.scss';
+import './_form.scss';
 
 import $ from 'jquery';
 import { MenuItem } from 'material-ui/Menu';

@@ -1,4 +1,4 @@
-import './big-time.scss';
+import './_big-time.scss';
 
 import { Component } from 'react';
 import React from 'react';
@@ -25,12 +25,8 @@ class BigTime extends Component {
 						this.props.time
 					} </div>
 					<div className={(this.props.left ? 'big-time__body--left' : '') + (this.props.right ? 'big-time__body--right' : '') + ' big-time__body'} >
-						<div className="App__title" > {
-							this.props.title
-						} </div>
-						<div className="App__text" > {
-							this.props.text
-						}
+						<div dangerouslySetInnerHTML={{ __html: this.props.title }} className="App__title" ></div>
+						<div dangerouslySetInnerHTML={{ __html: this.props.text }} className="App__text" >
 						</div>
 					</div>
 				</div>

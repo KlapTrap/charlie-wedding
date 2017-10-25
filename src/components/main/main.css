@@ -33,6 +33,9 @@
       margin-right: 20px; } }
 
 .into-text {
+  font-size: 24px;
+  line-height: 38px;
+  color: #82670D;
   margin-top: 120px;
   margin-bottom: 120px;
   color: #82670D; }
@@ -71,7 +74,7 @@
   justify-content: left;
   align-items: center;
   color: #82670D;
-  font-size: 18px; }
+  font-size: 14px; }
   .section-header::before {
     content: '';
     height: 1px;

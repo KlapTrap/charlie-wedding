@@ -6,7 +6,8 @@
         padding: 5px 10px;
         color: #82670D;
         font-size: 16px;
-        text-transform: uppercase;
+        font-family: 'Playfair Display SC', serif;
+        line-height: 24px;
         cursor: pointer;
         &:disabled {
             background: rgba(255, 255, 255, 0.387);

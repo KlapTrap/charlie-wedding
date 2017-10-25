@@ -1,4 +1,4 @@
-import './input.scss';
+import './_input.scss';
 
 import { Component } from 'react';
 import React from 'react';
