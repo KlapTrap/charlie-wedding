@@ -1,6 +1,6 @@
 .big-time {
     &__image {
-        padding-left: 100px;
+        // padding-left: 100px;
         padding-top: 100px;
         margin-bottom: -100px;
         @media screen and (max-width: 900px) {
@@ -8,6 +8,7 @@
         }
     }
     &__time {
+        font-family: 'Didot', serif;
         color: #FFDC66;
         font-size: 200px;
         @media screen and (max-width: 900px) {

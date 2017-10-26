@@ -22,7 +22,7 @@ class BigTime extends Component {
 				{imageLeft}
 				<div className="big-time__inner" >
 					<div className="big-time__time" > {
-						this.props.time
+						'—' + this.props.time
 					} </div>
 					<div className={(this.props.left ? 'big-time__body--left' : '') + (this.props.right ? 'big-time__body--right' : '') + ' big-time__body'} >
 						<div dangerouslySetInnerHTML={{ __html: this.props.title }} className="App__title" ></div>
