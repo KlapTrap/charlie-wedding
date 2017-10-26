@@ -11,6 +11,7 @@
         font-family: 'Didot', serif;
         color: #FFDC66;
         font-size: 200px;
+        white-space: nowrap;
         @media screen and (max-width: 900px) {
             font-size: 100px;
         }
@@ -26,13 +27,13 @@
             margin-top: 10px;
             position: absolute;
             width: 500px;
+            left: 200px;
             &--right {
-                right: 0;
-                left: -100px;
+                right: 50px;
+                left: auto;
             }
             &--left {
                 right: 0;
-                left: 100px;
             }
         }
 
@@ -42,7 +43,7 @@
         margin-top: 70px;
         @media screen and (min-width: 900px) {
             justify-content: center;
-            margin-top: 100px;
+            margin-top: 200px;
         }
         &--off-center {
             margin-right: 300px;
@@ -62,6 +63,9 @@
             justify-content: flex-end;
             @media screen and (max-width: 900px) {
                 margin-right: 0;
+            }
+            .big-time__image {
+                margin-right: -150px;
             }
             .big-time__time {
                 margin-left: 80px;
