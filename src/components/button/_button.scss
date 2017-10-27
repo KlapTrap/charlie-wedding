@@ -1,18 +1,20 @@
 .button-wrapper {
-    position: relative;
-    button {
-        background: #FFFFFF;
-        border: 1px solid #F3C019;
-        padding: 5px 10px;
-        color: #82670D;
-        font-size: 16px;
-        font-family: 'Playfair Display SC', serif;
-        line-height: 24px;
-        cursor: pointer;
-        &:disabled {
-            background: rgba(255, 255, 255, 0.387);
-            color: rgba(130, 103, 13, 0.374);
-            cursor: not-allowed;
-        }
-    }
+	position: relative;
+	button,
+	a {
+		background: #FFFFFF;
+		border: 1px solid #F3C019;
+		padding: 5px 10px;
+		color: #82670D !important;
+		font-size: 16px;
+		font-family: 'Playfair Display SC', serif;
+		line-height: 24px;
+		display: inline-block;
+		cursor: pointer;
+		&:disabled {
+			background: rgba(255, 255, 255, 0.387);
+			color: rgba(130, 103, 13, 0.374);
+			cursor: not-allowed;
+		}
+	}
 }

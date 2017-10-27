@@ -9,7 +9,7 @@
   width: 100px;
   height: 100%;
   position: absolute;
-  padding-top: 50px;
+  padding-top: 150px;
   font-size: 14px; }
   .side-nav__inner {
     padding: 10px; }
@@ -25,16 +25,43 @@
   .side-nav__item {
     padding: 0 10px;
     cursor: pointer; }
+  @media screen and (max-width: 900px) {
+    .side-nav__wrapper {
+      display: none; } }
+
+.rings {
+  display: inline-block; }
+
+.date-wrapper {
+  margin-left: 25px;
+  display: inline-block; }
+
+.date-header-wrapper {
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-top: 50px;
+  margin-left: 35px; }
+  .date-header-wrapper.mobile-header {
+    margin-top: 0;
+    margin-left: 0; }
+    @media screen and (min-width: 900px) {
+      .date-header-wrapper.mobile-header {
+        display: none; } }
 
 .main {
   position: relative;
   padding-bottom: 150px;
   padding-top: 50px;
-  margin-left: 50px;
+  margin-left: 100px;
   background-color: #FCFBF0;
   overflow: auto;
-  height: 100vh;
-  margin-left: 100px; }
+  height: 100vh; }
+  @media screen and (max-width: 900px) {
+    .main {
+      margin-left: 0;
+      padding-left: 10%;
+      padding-right: 10%; } }
 
 .section {
   flex: 1;
@@ -103,12 +130,6 @@
   align-items: center;
   color: #82670D;
   font-size: 14px; }
-  .section-header::before {
-    content: '';
-    height: 1px;
-    width: 52px;
-    background-color: #F3C019;
-    margin-right: 10px; }
 
 .paragraph {
   color: #82670D; }
@@ -223,16 +244,19 @@
 
 .button-wrapper {
   position: relative; }
-  .button-wrapper button {
+  .button-wrapper button,
+  .button-wrapper a {
     background: #FFFFFF;
     border: 1px solid #F3C019;
     padding: 5px 10px;
-    color: #82670D;
+    color: #82670D !important;
     font-size: 16px;
     font-family: 'Playfair Display SC', serif;
     line-height: 24px;
+    display: inline-block;
     cursor: pointer; }
-    .button-wrapper button:disabled {
+    .button-wrapper button:disabled,
+    .button-wrapper a:disabled {
       background: rgba(255, 255, 255, 0.387);
       color: rgba(130, 103, 13, 0.374);
       cursor: not-allowed; }
@@ -283,6 +307,8 @@
 
 .wedding-form {
   margin-top: 20px; }
+  .wedding-form-outer {
+    max-width: 600px; }
 
 .form-image {
   position: absolute;

@@ -16,7 +16,7 @@ class Accommodation extends Component {
 					{this.props.body}
 				</div>
 				<ButtonWrapper>
-					<button className="accommodation-button">View website</button>
+					<a className="accommodation-button" target="_blank" href={this.props.link}>View website</a>
 				</ButtonWrapper>
 			</div>
 		);

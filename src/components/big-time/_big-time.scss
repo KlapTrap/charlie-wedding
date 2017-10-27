@@ -1,78 +1,77 @@
 .big-time {
-    &__image {
-        // padding-left: 100px;
-        padding-top: 100px;
-        margin-bottom: -100px;
-        @media screen and (max-width: 900px) {
-            display: none;
-        }
-    }
-    &__time {
-        font-family: 'Didot', serif;
-        color: #FFDC66;
-        font-size: 200px;
-        white-space: nowrap;
-        @media screen and (max-width: 900px) {
-            font-size: 100px;
-        }
-    }
-    &__inner {
-        position: relative;
-    }
-    &__body {
-        @media screen and (max-width: 900px) {
-            margin-right: 20px;
-        }
-        @media screen and (min-width: 900px) {
-            margin-top: 10px;
-            position: absolute;
-            width: 500px;
-            left: 200px;
-            &--right {
-                right: 50px;
-                left: auto;
-            }
-            &--left {
-                right: 0;
-            }
-        }
-
-    }
-    &__wrapper {
-        display: flex;
-        margin-top: 70px;
-        @media screen and (min-width: 900px) {
-            justify-content: center;
-            margin-top: 200px;
-        }
-        &--off-center {
-            margin-right: 300px;
-            @media screen and (max-width: 900px) {
-                margin-right: 0;
-            }
-        }
-        &--left {
-            margin-left: 100px;
-            justify-content: left;
-            @media screen and (max-width: 900px) {
-                margin-left: 0;
-            }
-        }
-        &--right {
-            margin-right: 100px;
-            justify-content: flex-end;
-            @media screen and (max-width: 900px) {
-                margin-right: 0;
-            }
-            .big-time__image {
-                margin-right: -150px;
-            }
-            .big-time__time {
-                margin-left: 80px;
-                @media screen and (max-width: 900px) {
-                    margin-left: 0;
-                }
-            }
-        }
-    }
+	&__image {
+		// padding-left: 100px;
+		padding-top: 100px;
+		margin-bottom: -100px;
+		@media screen and (max-width: 900px) {
+			display: none;
+		}
+	}
+	&__time {
+		font-family: 'Didot', serif;
+		color: #FFDC66;
+		font-size: 200px;
+		white-space: nowrap;
+		@media screen and (max-width: 900px) {
+			font-size: 100px;
+		}
+	}
+	&__inner {
+		position: relative;
+	}
+	&__body {
+		@media screen and (max-width: 900px) {
+			margin-right: 20px;
+		}
+		@media screen and (min-width: 900px) {
+			margin-top: 10px;
+			position: absolute;
+			width: 500px;
+			left: 200px;
+			&--right {
+				right: 50px;
+				left: auto;
+			}
+			&--left {
+				right: 0;
+			}
+		}
+	}
+	&__wrapper {
+		display: flex;
+		margin-top: 70px;
+		@media screen and (min-width: 900px) {
+			justify-content: center;
+			margin-top: 200px;
+		}
+		&--off-center {
+			margin-right: 300px;
+			@media screen and (max-width: 900px) {
+				margin-right: 0;
+			}
+		}
+		&--left {
+			margin-left: 100px;
+			justify-content: left;
+			@media screen and (max-width: 900px) {
+				margin-left: 0;
+			}
+		}
+		&--right {
+			margin-right: 100px;
+			justify-content: flex-end;
+			@media screen and (max-width: 900px) {
+				margin-right: 0;
+			}
+			.big-time__image {
+				margin-right: -150px;
+			}
+			.big-time__time {
+				margin-left: 80px;
+				@media screen and (max-width: 900px) {
+					margin-left: 0;
+				}
+			}
+		}
+	}
 }

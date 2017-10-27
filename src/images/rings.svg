@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="54px" viewBox="0 0 33 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>rings</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-59.000000, -59.000000)" id="Group-13" stroke-width="3">
+            <g transform="translate(60.000000, 60.000000)">
+                <g id="rings">
+                    <path d="M15.0772132,29.9977278 C6.97824639,29.8562179 0.527070111,23.1762631 0.668963185,15.0773949 C0.810093394,6.9785267 7.49012947,0.527810401 15.5890963,0.668938892 C23.6880631,0.810448811 30.138858,7.49040355 29.9977277,15.5892718 C29.8562161,23.68814 23.17618,30.1388563 15.0772132,29.9977278 Z" id="Stroke-1" stroke="#F3BF18"></path>
+                    <path d="M4.78305496,46.1884611 C-0.843850031,40.3617154 -0.681740851,31.0765314 5.14503522,25.4496557 C10.9718113,19.82278 20.2566622,19.9848884 25.8835672,25.8120155 C31.5104722,31.6383798 31.348363,40.9235638 25.5219684,46.5504395 C19.6948109,52.1773152 10.4095785,52.0148254 4.78305496,46.1884611 Z" id="Stroke-3" stroke="#FEDB66"></path>
+                    <path d="M30,15.3333333 C29.8608959,23.5760396 23.2945096,30.1413224 15.3333333,29.9976874" id="Stroke-7" stroke="#F3BF18"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

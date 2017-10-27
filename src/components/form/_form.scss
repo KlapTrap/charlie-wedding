@@ -1,39 +1,42 @@
 .form-filler {
-    width: 100%;
+	width: 100%;
 }
 
 .form-button {
-    position: absolute;
-    right: 0;
+	position: absolute;
+	right: 0;
 }
 
 .wedding-form {
-    margin-top: 20px;
+	margin-top: 20px;
+	&-outer {
+		max-width: 600px;
+	}
 }
 
 .form-image {
-    position: absolute;
-    left: -390px;
-    top: 60px;
-    width: 442px;
-    height: 442px;
-    z-index: -1;
+	position: absolute;
+	left: -390px;
+	top: 60px;
+	width: 442px;
+	height: 442px;
+	z-index: -1;
 }
 
 .wedding-form-outer.done {
-    .wedding-thanks {
-        display: block;
-    }
+	.wedding-thanks {
+		display: block;
+	}
 }
 
 .wedding-thanks {
-    display: none;
+	display: none;
 }
 
 .form-error {
-    color: #b71414;
-    display: none;
-    &--show {
-        display: block;
-    }
+	color: #b71414;
+	display: none;
+	&--show {
+		display: block;
+	}
 }

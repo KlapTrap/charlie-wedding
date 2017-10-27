@@ -1,110 +1,118 @@
 @import '../../colors';
 .main {
-    position: relative;
-    padding-bottom: 150px;
-    padding-top: 50px;
-    margin-left: 50px;
-    background-color: $yellow-light;
-    overflow: auto;
-    height:100vh;
-    margin-left: 100px;
+	position: relative;
+	padding-bottom: 150px;
+	padding-top: 50px;
+	margin-left: 100px;
+	background-color: $yellow-light;
+	overflow: auto;
+	height: 100vh;
+	@media screen and (max-width: 900px) {
+		margin-left: 0;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
 }
+
 .section {
-    flex: 1;
-    display: flex;
-    @media screen and (max-width: 900px) {
-        flex-direction: column;
-    }
-    &-last {
-        margin-bottom: 200px;
-    }
+	flex: 1;
+	display: flex;
+	@media screen and (max-width: 900px) {
+		flex-direction: column;
+	}
+	&-last {
+		margin-bottom: 200px;
+	}
 }
+
 .left-section {
-    flex: 1;
-    margin-left: 150px;
-    &.no-margin {
-        margin-left: 0;
-    }
+	flex: 1;
+	margin-left: 150px;
+	&.no-margin {
+		margin-left: 0;
+	}
 }
+
 .right-section {
-    position: relative;
-    flex: 1;
-    margin-right: 120px;
-    z-index: 1;
-    @media screen and (max-width: 900px) {
-        margin-right: 20px;
-    }
+	position: relative;
+	flex: 1;
+	margin-right: 120px;
+	z-index: 1;
+	@media screen and (max-width: 900px) {
+		margin-right: 20px;
+	}
 }
+
 .into-text {
-    font-size: 24px;
-    line-height: 38px;
-    color: #82670D;
-    margin-top: 120px;
-    margin-bottom: 120px;
-    @media screen and (max-width: 900px) {
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-    color: $dark-yellow;
+	font-size: 24px;
+	line-height: 38px;
+	color: #82670D;
+	margin-top: 120px;
+	margin-bottom: 120px;
+	@media screen and (max-width: 900px) {
+		margin-top: 50px;
+		margin-bottom: 20px;
+	}
+	color: $dark-yellow;
 }
+
 .big-number {
-    font-size: 520px;
-    margin-top: 150px;
+	font-size: 520px;
+	margin-top: 150px;
 }
+
 .center-text {
-    text-align: center;
+	text-align: center;
 }
 
 .off-center-text {
-    text-align: end;
+	text-align: end;
 }
 
 .big-time-text {
-    color: $mid-yellow;
-    font-size: 200px;
-    &-sub {
-        margin-top: -30px;
-        margin-left: 15px;
-        width: 500px;
-        &-left {
-            margin-left: -150px;
-        }
-    }
-    &-sub-header {
-        margin-bottom: 6px;
-        color: $header-yellow;
-        font-style: italic;
-    }
+	color: $mid-yellow;
+	font-size: 200px;
+	&-sub {
+		margin-top: -30px;
+		margin-left: 15px;
+		width: 500px;
+		&-left {
+			margin-left: -150px;
+		}
+	}
+	&-sub-header {
+		margin-bottom: 6px;
+		color: $header-yellow;
+		font-style: italic;
+	}
 }
 
 .section-header {
-    display: flex;
-    justify-content: center;
-    justify-content: left;
-    align-items: center;
-    color: #82670D;
-    font-size: 14px;
-    &::before {
-        content: '';
-        height: 1px;
-        width: 52px;
-        background-color: $yellow;
-        margin-right: 10px;
-    }
+	display: flex;
+	justify-content: center;
+	justify-content: left;
+	align-items: center;
+	color: #82670D;
+	font-size: 14px; // &::before {
+	// 	content: '';
+	// 	height: 1px;
+	// 	width: 52px;
+	// 	background-color: $yellow;
+	// 	margin-right: 10px;
+	// }
 }
+
 .paragraph {
-    color: $dark-yellow;
+	color: $dark-yellow;
 }
 
 .hidden {
-    color: transparent;
+	color: transparent;
 }
 
 .accommodation-section {
-    &-header {
-        margin-top: 100px;
-    }
-    &-row {
-
-    }
+	&-header {
+		margin-top: 100px;
+	}
+	&-row {}
 }
