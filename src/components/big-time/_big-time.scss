@@ -1,6 +1,5 @@
 .big-time {
 	&__image {
-		// padding-left: 100px;
 		padding-top: 100px;
 		margin-bottom: -100px;
 		@media screen and (max-width: 900px) {
@@ -10,7 +9,7 @@
 	&__time {
 		font-family: 'Didot', serif;
 		color: #FFDC66;
-		font-size: 200px;
+		font-size: 150px;
 		white-space: nowrap;
 		@media screen and (max-width: 900px) {
 			font-size: 100px;
@@ -33,7 +32,7 @@
 				left: auto;
 			}
 			&--left {
-				right: 0;
+                right: 0;
 			}
 		}
 	}
@@ -52,7 +51,10 @@
 		}
 		&--left {
 			margin-left: 100px;
-			justify-content: left;
+            justify-content: left;
+            .big-time__image {
+                margin-left: 20px;
+            }
 			@media screen and (max-width: 900px) {
 				margin-left: 0;
 			}

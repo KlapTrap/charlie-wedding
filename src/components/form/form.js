@@ -75,12 +75,12 @@ class FormComponent extends Component {
                 <div className="wedding-thanks">Thank you!</div>
                 <form id={this.guid} className="wedding-form" onSubmit={this.submit} autoComplete="off" action="#">
                     <InputComponent required name="name" placeholder="Your Name" />
-                    <SelectComponent name="guestType" value="day">
-                        <MenuItem value={'day'}>Day Guest</MenuItem>
-                        <MenuItem value={'evening'}>Evening Guest</MenuItem>
+                    <SelectComponent name="guestType" value="hot-meat">
+                        <MenuItem value={'hot-meat'}>I would like a hot meat curry</MenuItem>
+                        <MenuItem value={'mild-meat'}>I would like a mild meat curry</MenuItem>
+                        <MenuItem value={'veggie'}>I would like a vegetarian curry</MenuItem>
                     </SelectComponent>
-                    <InputComponent name="diet" placeholder="Your dietary requirements" />
-                    <InputComponent name="question" placeholder="Questions" />
+                    <InputComponent name="question" placeholder="Questions or specific requirements" />
                     <ButtonWrapper>
                         <div className="form-filler"></div>
                         {button}

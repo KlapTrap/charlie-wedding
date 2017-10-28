@@ -2,15 +2,15 @@
     width: 100%;
     background-color: white;
     margin-top: 10px;
+    font-size: 14px;
     &:before, &:after {
         background-color: #F3C019!important;
     }
     &__wrapper {
         width: 100%;
         padding-top: 8px;
+
         label {
-            color: #82670D;
-            text-transform: uppercase;
             left: 12px;
             top: 8px;
             pointer-events: none;
@@ -20,6 +20,8 @@
         div[role="button"] {
             padding-bottom: 0;
             padding: 5px 15px;
+            font-family: 'Playfair Display SC', serif !important;
+            color: #82670D;
         }
         svg {
             top: 10px;

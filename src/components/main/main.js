@@ -1,13 +1,14 @@
 import './_main.scss';
 
+import $ from 'jquery';
 import React from 'react';
 import { Component } from 'react';
 
 import hero from '../../images/hero_1.jpg';
+import rings from '../../images/rings.svg';
 import image1 from '../../images/schedule_1.jpg';
 import image2 from '../../images/schedule_2.jpg';
 import image3 from '../../images/schedule_3.jpg';
-import rings from '../../images/rings.svg';
 import footerImage from '../../images/schedule_4.jpg';
 import Accommodation from '../accommodation/accommodation';
 import AccommodationRow from '../accommodation/accommodation-row';
@@ -15,6 +16,17 @@ import BigTime from '../big-time/big-time';
 import FormComponent from '../form/form';
 
 class Main extends Component {
+	$scrollElm = $('#main')
+
+	scrollTo(id) {
+		return () => {
+			const top = $(`#${id}`).offset().top + $('#main').scrollTop();
+			console.log(top);
+			$('#main').animate({
+				scrollTop: top
+			}, 400);
+		}
+	}
 	render() {
 		return (
 			<div className="main" id="main">
@@ -32,7 +44,7 @@ class Main extends Component {
 					</div>
 					<div className="right-section">
 						<div className="into-text">
-							We’re getting married and we would love for you to join us. Take a look at the day’s schedule below, find accommodation nearby or RSVP straight away just below.
+							We’re getting married and we would love for you to join us. Take a look at the day’s <a onClick={this.scrollTo('schedule')}>schedule</a> below, find <a onClick={this.scrollTo('accommodation')}>accommodation</a> nearby or <a onClick={this.scrollTo('rsvp')}>RSVP</a> straight away just below.
 						</div>
 						<img className="big-time__image form-image" src={hero} />
 						<FormComponent />

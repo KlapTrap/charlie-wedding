@@ -2,7 +2,6 @@
 .main {
 	position: relative;
 	padding-bottom: 150px;
-	padding-top: 50px;
 	margin-left: 100px;
 	background-color: $yellow-light;
 	overflow: auto;
@@ -10,7 +9,8 @@
 	@media screen and (max-width: 900px) {
 		margin-left: 0;
 		padding-left: 10%;
-		padding-right: 10%;
+        padding-right: 10%;
+        padding-top: 50px;
 	}
 }
 
@@ -48,12 +48,17 @@
 	line-height: 38px;
 	color: #82670D;
 	margin-top: 120px;
-	margin-bottom: 120px;
+    margin-bottom: 129px;
+    min-height: 152px;
 	@media screen and (max-width: 900px) {
+        min-height: 0;
 		margin-top: 50px;
 		margin-bottom: 20px;
 	}
-	color: $dark-yellow;
+    color: $dark-yellow;
+    a {
+        cursor: pointer;
+    }
 }
 
 .big-number {
