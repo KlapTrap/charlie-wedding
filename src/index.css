@@ -56,7 +56,8 @@
   margin-left: 100px;
   background-color: #FCFBF0;
   overflow: auto;
-  height: 100vh; }
+  height: 100vh;
+  -webkit-overflow-scrolling: touch; }
   @media screen and (max-width: 900px) {
     .main {
       margin-left: 0;
@@ -316,7 +317,8 @@
   right: 0; }
 
 .wedding-form {
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 60px; }
   .wedding-form-outer {
     max-width: 600px; }
 
@@ -359,7 +361,6 @@ body {
   font-family: 'Playfair Display SC', serif; }
 
 a {
-  padding-bottom: 3px;
   border-bottom: 1px solid #82670D;
   text-decoration: none;
   color: inherit;

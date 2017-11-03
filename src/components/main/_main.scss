@@ -6,6 +6,7 @@
 	background-color: $yellow-light;
 	overflow: auto;
 	height: 100vh;
+	-webkit-overflow-scrolling: touch;
 	@media screen and (max-width: 900px) {
 		margin-left: 0;
 		padding-left: 10%;

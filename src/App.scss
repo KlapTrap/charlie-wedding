@@ -11,7 +11,6 @@
 @import 'components/input/_input.scss';
 @import 'components/select/_select.scss';
 @import 'components/form/_form.scss';
-
 body {
 	margin: 0;
 	overflow: hidden;
@@ -28,7 +27,6 @@ body {
 			border-bottom: none;
 		}
 	}
-
 	&__text {
 		color: #82670D;
 		font-size: 14px;
@@ -37,7 +35,6 @@ body {
 }
 
 a {
-	padding-bottom: 3px;
 	border-bottom: 1px solid #82670D;
 	text-decoration: none;
 	color: inherit;
@@ -45,17 +42,14 @@ a {
 	&:link {
 		color: inherit;
 	}
-
 	/* visited link */
 	&:visited {
 		color: inherit;
 	}
-
 	/* mouse over link */
 	&:hover {
 		color: inherit;
 	}
-
 	/* selected link */
 	&:active {
 		color: inherit;
